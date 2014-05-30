@@ -1,6 +1,9 @@
 get '/' do
-  # Look in app/views/index.erb
   erb :index
+end
+
+get '/search' do
+  erb :form
 end
 
 # get '/randompets' do
@@ -8,7 +11,7 @@ end
 #   erb :bands
 # end
 
-# post '/bands' do
+ # post '/bands' do
 #   new_band = Band.create!(name: params[:name])
 #   redirect "/bands/#{new_band.id}"
 # end

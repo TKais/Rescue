@@ -13,7 +13,8 @@ function getRandomCat(event) {
     dataType: "json"
   })
   .done(function(data){
-    $('.photos').html('<img src='+ data.petfinder.pet.media.photos.photo[0].$t + ' width="100">')
+
+    $('.photos').html('<img src='+ data.petfinder.pet.media.photos.photo[0].$t + ' width="100">').append('<p>' + data.petfinder.pet.name.$t + '</p>').append('<br>Breed:  ' + data.petfinder.pet.breeds.$t + '</br>').append('<br>Age:  ' + data.petfinder.pet.age.$t + '</br>').append('<br>Sex:  ' + data.petfinder.pet.sex.$t + '</br>').append('<br>Description:  ' + data.petfinder.pet.description.$t + '</br>').append('<br>Shelter ID:  ' + data.petfinder.pet.shelterId.$t + '</br>').append('<br>Status:  ' + data.petfinder.pet.status.$t + '</br>')
   })
   .fail(function() {
     alert('Error');
@@ -30,8 +31,8 @@ function getRandomDog(event) {
     dataType: "json"
   })
   .done(function(data) {
-
-    $('.photos').html('<img src='+ data.petfinder.pet.media.photos.photo[0].$t + ' width="100">').append('<p>' + data.petfinder.pet.name.$t + '</p>').append('<br>Age:  ' + data.petfinder.pet.age.$t + '</br>').append('<br>Sex:  ' + data.petfinder.pet.sex.$t + '</br>').append('<br>Description:  ' + data.petfinder.pet.description.$t + '</br>').append('<br>Shelter ID:  ' + data.petfinder.pet.shelterId.$t + '</br>')
+    debugger
+    $('.photos').html('<img src='+ data.petfinder.pet.media.photos.photo[0].$t + ' width="100"><br>').append('<p>' + data.petfinder.pet.name.$t + '</p>').append('<br>Breed:  ' + data.petfinder.pet.breeds.$t + '</br>').append('<br>Age:  ' + data.petfinder.pet.age.$t + '</br>').append('<br>Sex:  ' + data.petfinder.pet.sex.$t + '</br>').append('<br>Description:  ' + data.petfinder.pet.description.$t + '</br>').append('<br>Shelter ID:  ' + data.petfinder.pet.shelterId.$t + '</br>').append('<br>Status:  ' + data.petfinder.pet.status.$t + '</br>')
   })
   .fail(function() {
     alert('Error');
