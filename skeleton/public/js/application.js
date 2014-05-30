@@ -57,17 +57,6 @@ function getRandomDog(event) {
 //   })
 // }
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //   function submitForm(event) {
 //     event.preventDefault();
 //     $.ajax ({
