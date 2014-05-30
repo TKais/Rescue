@@ -97,6 +97,44 @@ button {
   filter: blur(5px);*/
 }
 
+.form-buttons {
+  -moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background-color:transparent;
+  -webkit-border-top-left-radius:37px;
+  -moz-border-radius-topleft:37px;
+  border-top-left-radius:37px;
+  -webkit-border-top-right-radius:0px;
+  -moz-border-radius-topright:0px;
+  border-top-right-radius:0px;
+  -webkit-border-bottom-right-radius:37px;
+  -moz-border-radius-bottomright:37px;
+  border-bottom-right-radius:37px;
+  -webkit-border-bottom-left-radius:0px;
+  -moz-border-radius-bottomleft:0px;
+  border-bottom-left-radius:0px;
+  text-indent:0;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  color:#666666;
+  font-family:Trebuchet MS;
+  font-size:15px;
+  font-weight:bold;
+  font-style:normal;
+  height:50px;
+  line-height:50px;
+  width:100px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:0px -1px 0px #ffffff;
+}
+
+.form-buttons:active {
+  position:relative;
+  top:1px;
+}
+}
 
 
 
@@ -120,8 +158,8 @@ button {
   position:relative;
 }*/
 
-.iphone-front,
-.iphone-back{
+.dog-front,
+.dog-back{
 
   /* Enable 3D transforms */
   transform-style: preserve-3d;
@@ -148,7 +186,7 @@ button {
   transition:0.8s;
 }
 
-.iphone-back{
+.dog-back{
 
   /* The back side is flipped 180 deg by default */
   transform:rotateY(180deg);
@@ -157,13 +195,13 @@ button {
   background-position:right center;
 }
 
-.threeD:hover .iphone-front{
+.threeD:hover .dog-front{
   /* When the container is hovered, flip the front side and hide it .. */
   transform:rotateY(180deg);
   -webkit-transform:rotateY(180deg);
 }
 
-.threeD:hover .iphone-back{
+.threeD:hover .dog-back{
   /* .. at the same time flip the back side into visibility */
   transform:rotateY(360deg);
   -webkit-transform:rotateY(360deg);

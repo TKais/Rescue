@@ -6,6 +6,10 @@ get '/search' do
   erb :form
 end
 
+get '/random' do
+  erb :random
+end
+
 # get '/randompets' do
 #   @band_names = Band.all.map(&:name)
 #   erb :bands
