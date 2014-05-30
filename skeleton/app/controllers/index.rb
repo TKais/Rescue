@@ -10,7 +10,8 @@ get '/random' do
   erb :random
 end
 
-# post ''
+post '/search' do
+end
 
 
 
